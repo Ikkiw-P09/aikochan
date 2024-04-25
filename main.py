@@ -12,7 +12,7 @@ from discord import app_commands
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
-TOKEN = 'MTIzMjU3MDQwMTUzMjY3ODE5Ng.GYjOp_.hheHvGFLwvKNeyv_SVHF-Vc_0_vMJU5E170zec'
+TOKEN=os.getenv(TOKEN)
 
 def get_thai_date():
   today = datetime.date.today()
